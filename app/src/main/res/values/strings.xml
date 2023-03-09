@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Prac2_r</string>
     <string name="log_in">Войти</string>
-    <string name="sign_up">Зарегистрироваться</string>
+    <string name="sign_up">Регистрация</string>
     <string name="continu">Продолжить</string>
     <string name="profile_head">Мой Профиль</string>
 
