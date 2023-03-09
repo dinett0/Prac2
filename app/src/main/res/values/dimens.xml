@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="big_margin">140dp</dimen>
+    <dimen name="double_margin">50dp</dimen>
+    <dimen name="padding">80dp</dimen>
+
+</resources>
