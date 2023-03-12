@@ -14,11 +14,11 @@
         android:id="@+id/sign_up"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginTop="@dimen/padding"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:text="@string/sign_up"
 
-        android:text="@string/sign_up" />
+        android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/editTextName"

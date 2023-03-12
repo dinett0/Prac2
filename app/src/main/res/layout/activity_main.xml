@@ -15,6 +15,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="@dimen/double_margin"
         android:backgroundTint="@color/orang"
+        android:onClick="onClickLogIn"
         android:text="@string/log_in"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,16 +39,17 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin"
+        android:layout_marginTop="196dp"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="E-mail"
+        android:inputType="textEmailAddress"
         android:textColor="@color/white"
         android:textColorHint="@color/gray"
-        android:backgroundTint="@color/white"
-        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -66,13 +68,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="224dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="194dp"
+        android:layout_height="175dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/icon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
