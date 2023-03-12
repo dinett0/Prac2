@@ -2,6 +2,7 @@ package com.example.prac2_r;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,12 +24,16 @@ public class ProfileActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null){
+            name.setText(bundle.get("name").toString());
+            email.setText(bundle.get("login").toString());
+            password.setText(bundle.get("password").toString());
+        }
+    }
 
-            }
-        });
-
+    public void onBack(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

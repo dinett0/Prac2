@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="@dimen/padding"
+    android:paddingHorizontal="30dp"
     android:background="@color/black"
     android:orientation="vertical"
     tools:context=".SignUpActivity"
@@ -16,6 +16,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="@dimen/padding"
         android:gravity="center"
+        android:textSize="@dimen/margin"
         android:text="@string/sign_up"
 
         android:textColor="@color/white" />
@@ -60,11 +61,25 @@
 
     <Button
         android:id="@+id/buttonSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/double_margin"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_heighth"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/big_margin"
         android:backgroundTint="@color/orang"
+        android:onClick="onSignUp"
         android:text="@string/sign_up"
         app:cornerRadius="20dp" />
+
+    <ImageButton
+        android:id="@+id/backbutt"
+        android:layout_width="@dimen/back_button"
+        android:layout_height="@dimen/back_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:onClick="onBack"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
 
 </LinearLayout>
